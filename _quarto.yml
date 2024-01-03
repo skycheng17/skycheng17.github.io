@@ -3,6 +3,9 @@ project:
   output-dir: docs
   preview:
     port: 3333
+  resources: 
+    - "portfolio/3_Zillow/Zillow.html"
+    - "portfolio/2_ON_TRACK/ON_TRACK.html"
 
 website:
   title: "Stephanie Cheng"
@@ -50,17 +53,12 @@ format:
   html:
     theme:
       light:
-        - cosmo
-        #- assets/silvia-theme-light.scss
-        #- assets/silvia/colors-light.scss
-        #- assets/silvia/fonts.scss
+        - flatly
+        - assets/silvia-theme-light.scss
+
       dark: 
-        - cosmo
-        #- assets/silvia-theme-dark.scss
-        #- assets/silvia/colors-dark.scss
+        - darkly
     highlight-style: solarized
-      #light: assets/silvia/a11y-light.theme
-      #dark: assets/silvia/a11y-dark.theme
     code-link: true
     code-copy: true
     toc: true
@@ -68,6 +66,4 @@ format:
 
 execute: 
   freeze: auto
-
-#include-in-header: assets/umami.html
 

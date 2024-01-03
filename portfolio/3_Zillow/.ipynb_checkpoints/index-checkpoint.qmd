@@ -1,5 +1,7 @@
 ---
 title: "Zillow Home Value Predictions"
+resources: 
+- "portfolio/3_Zillow/Zillow.html"
 author: 
 - Stephanie Cheng
 - Shreya Bansal
@@ -18,10 +20,17 @@ about:
   links:
     - icon: journal-code
       text: Full Analysis
-      href: Zillow.html
+      href: https://skycheng17.github.io/portfolio/3_Zillow/Zillow.html  
 ---
 
 ### Project Brief
 
 This project aims to help Zillow better predict its housing market predictions. The project emphasizes on local knowledge, a novel way of looking at the data and creative factors that might enhance predictability of Zillow’s modeling. While Zillow's model works satisfactorily, this approach offers a different lens into how the model could be built stronger with intel from a variety of internal and external factors, such as amenities like schools, parks, public spaces, as well as demographic data like poverty rates, median income, etc.
 
+<iframe src="Zillow.html" width="1000" height="1000">
+  <p>Hi SOF</p>
+</iframe>
+
+
+
+frameborder="0" allowfullscreen>

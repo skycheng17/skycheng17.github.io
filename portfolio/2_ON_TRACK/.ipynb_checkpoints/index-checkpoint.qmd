@@ -1,5 +1,7 @@
 ---
 title: 'Predicting NJ Transit train delays to schedule track maintenance and upgrades'
+resources: 
+    - "portfolio/2_ON_TRACK/ON_TRACK.html"
 author:
   - Stephanie Cheng
   - Shreya Bansal
@@ -18,7 +20,7 @@ about:
   links:
     - icon: journal-code
       text: Full Analysis
-      href: https://drive.google.com/file/d/1CZCts6kDHtpO9ufKIdDbw0HuSBezZzqj/view?usp=sharing
+      href: https://skycheng17.github.io/portfolio/2_ON_TRACK/ON_TRACK.html  
     - icon: youtube
       text: Pechakucha Presentation
       href: https://youtu.be/0V8Ebk3E6sA?si=Q4hulpzhflC7Jc_3
@@ -29,23 +31,25 @@ about:
 ---
 
 
-![Schematic representation of the Medication Assisted Treatment (MAT) referral process pipeline as part of the recovery for someone with Opioid Use Disorder (OUD)](pipeline.png){fig-alt="Medication Assistment Treatment pipeline starting with the person with Opioid Use Disorder. They then might interact with the Payer (e.g. health insurance), a harm reduction center like Prevention Point Philadelphia, and/or a clinical setting like an Assessment Center or other location offering Withdrawal Management care. From there the person with Opioid Use Disorder might enter a Treatment Setting. This schematic depicts many possibilities and a very complex referral process that is difficult to navigate."}
+### Project Brief
 
-# 2020 Opioid Data Hackathon
-This year I participated in the 2020 Opioid Data Hackathon as part of a team tasked with creating ways to visualize the opioid use disorder recovery process to identify barriers and build understanding in the general public.
-
-I went into it thinking I might explore some interesting datasets to generate maps, and my teammates were on a similar wavelength. It didn't take long to realize the kind of information needed to understand what it's like to engage in recovery didn't live in quantitative datasets. So we endeavored to collect our own qualitative data instead! We conducted interviews with our partner organizations and other major players in Philly as part of this storytelling project.
 
 **Our team's final report, presentation, and "scrollytelling" mock-up are linked above**. A slide deck created for a lab meeting presentation is also linked, and summarizes the content.
 
+![Schematic representation of the Medication Assisted Treatment (MAT) referral process pipeline as part of the recovery for someone with Opioid Use Disorder (OUD)](cover.png)
+
+### Exploratory Analysis
+
+
+### Project Outcomes
+
+
 {{< video https://www.youtube.com/embed/0V8Ebk3E6sA?si=intxhMFAYXFc2gh7 >}}
 
-Be sure to check out these **Freakonomics Radio podcast episodes** to learn more about the **opioid crisis in Philly**:
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBk7ORgaR4XeQm830dYbeWz%2FPPA%3Fnode-id%3D13-457%26source%3Demail_invite%26mode%3Ddesign%26t%3D3sLUGUBwsQADijTa-1" allowfullscreen></iframe>
 
-- [Part 1: "We've Addicted an Entire Generation"](https://freakonomics.com/podcast/opioids-part-1/)
-- [Part 2: "It's Not a Death Sentence"](https://freakonomics.com/podcast/opioids-part-2/)
 
-## Data Hack hosts
+### Data Sources
 - [Code for Philly ](https://codeforphilly.org/)
 - [DataPhilly](https://www.meetup.com/DataPhilly/)
 - [R-Ladies Philly](https://www.rladiesphilly.org/)
