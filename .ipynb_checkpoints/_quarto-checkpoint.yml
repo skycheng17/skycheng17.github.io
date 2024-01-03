@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 3333
+
+website:
+  title: "Stephanie Cheng"
+  site-url: "https://skycheng17.github.io"
+  repo-url: "skycheng17.github.io"
+  repo-actions: [source]
+  description: "Urban Planner and Data Scientist"
+  favicon: images/cell_towers.png
+  page-navigation: true
+  back-to-top-navigation: true
+  twitter-card: true
+  search: 
+    location: navbar
+    type: overlay
+  comments: 
+    utterances: 
+      repo: skycheng17/skycheng17.github.io
+      label: utterances
+      theme: body-light
+      issue-term: title
+ 
+  navbar:
+    logo: images/cell_towers.png
+    tools:
+    - icon: github
+      href: https://github.com/skycheng17/skycheng17.github.io
+    - icon: linkedin
+      href: https://linkedin.com/in/skycheng17
+    right:
+      - text: About
+        aria-label: "About"
+        href: about.qmd
+      - text: Resume
+        aria-label: "Resume"
+        href: resume.qmd
+      - text: Portfolio
+        aria-label: "Portfolio"
+        href: "portfolio/portfolio.qmd"
+  
+  page-footer:  
+    center: >-
+     &#169; 2024 Stephanie Cheng &#8729; Made with ❤️ and [Quarto](https://quarto.org)
+
+format: 
+  html:
+    grid:
+      margin-width: 200px
+      body-width: 1000px
+    theme:
+      light:
+        - cosmo
+        #- assets/silvia-theme-light.scss
+        #- assets/silvia/colors-light.scss
+        #- assets/silvia/fonts.scss
+      dark: 
+        - cosmo
+        #- assets/silvia-theme-dark.scss
+        #- assets/silvia/colors-dark.scss
+    highlight-style: solarized
+      #light: assets/silvia/a11y-light.theme
+      #dark: assets/silvia/a11y-dark.theme
+    code-link: true
+    code-copy: true
+    toc: true
+    pagetitle: "{{< meta title >}} | Stephanie Cheng"
+
+execute: 
+  freeze: auto
+
+#include-in-header: assets/umami.html
+

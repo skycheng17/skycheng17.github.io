@@ -1,0 +1,42 @@
+---
+title: "DigiPlay: Interactive Playground"
+author:
+- Stephanie Cheng
+- Noah Johnson
+- Shreya Bansal
+- Gustell Preston
+date: 2023-05-03
+image: image-5.webp
+categories:
+  - C++
+  - Arduino
+  - Urban Sensor
+  - GIS
+subtitle: "A prototype interactive playground installation and business proposal forwarding physical activity, equitable access to play, and STEM education for kids 2-12 across Philadelphia."
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: link
+      text: Full Project
+      href: https://www.sensingthecity.com/digiplay-interactive-playground/
+    - icon: youtube
+      text: Youtube Tutorial
+      href: https://youtu.be/dlxA9tKSt9A
+    - icon: file-earmark-slides
+      text: Slidedeck
+      href: https://docs.google.com/presentation/d/1bXqZRkV4wXU2qx7BLHlziYEQLyRpM2ULZ16K3bLJTJo/edit?usp=sharing
+
+---
+
+### Project Brief
+
+
+
+This project and its code has been posted on the [Sensing the City](https://www.sensingthecity.com/) website created by my instructor and advisor, Professor Allison Lassiter. Find the full post of the DigiPlay project at the top of this post.
+
+### Exploratory Analysis
+
+
+### 
