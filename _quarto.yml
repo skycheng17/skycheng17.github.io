@@ -52,12 +52,8 @@ website:
 format: 
   html:
     theme:
-      light:
-        - flatly
-        - assets/silvia-theme-light.scss
-
-      dark: 
-        - darkly
+      light: flatly
+      dark: darkly
     highlight-style: solarized
     code-link: true
     code-copy: true
