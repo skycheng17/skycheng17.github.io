@@ -9,7 +9,6 @@ resources:
   - "portfolio/4_Kibos_Agropole/index.qmd"
   - "portfolio/5_Flooding/index.qmd"
   - "portfolio/6_Digital_Equity/index.qmd"
-  - "portfolio/1_DigiPlay/index.qmd"
 listing:
   - id: portfolio
     contents: "portfolio/**/index.qmd"
