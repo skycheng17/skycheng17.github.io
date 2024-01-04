@@ -9,6 +9,7 @@ date: 2023-12-15
 image: cover.png
 categories:
   - R
+  - GIS
   - Transportation
   - Climate Change
   - Machine Learning

@@ -9,6 +9,7 @@ date: 2023-10-23
 image: featured.png
 categories:
   - R
+  - GIS
   - Housing
   - Real Estate
   - Machine Learning
@@ -25,7 +26,11 @@ about:
 
 ### Project Brief
 
-This project aims to help Zillow better predict its housing market predictions. The project emphasizes on local knowledge, a novel way of looking at the data and creative factors that might enhance predictability of Zillow’s modeling. While Zillow's model works satisfactorily, this approach offers a different lens into how the model could be built stronger with intel from a variety of internal and external factors, such as amenities like schools, parks, public spaces, as well as demographic data like poverty rates, median income, etc.
+This project aims to help Zillow better predict its housing market predictions through a hedonic model. The project emphasizes on local knowledge, a novel way of looking at the data and creative factors that might enhance predictability of Zillow’s modeling. While Zillow's model works satisfactorily, this approach offers a different lens into how the model could be built stronger with intel from a variety of internal and external factors, such as amenities like schools, parks, public spaces, as well as demographic data like poverty rates, median income, crime, etc.
+
+
+
+In addition to the hedonic model, this project focussed on cross validation through evaluating mean absolute error/percent error and conducting Moran's I testing. The full analysis and model can be found below or by clicking the Full Analysis link above.
 
 <iframe src="Zillow.html" width="1000" height="1000">
   <p>Hi SOF</p>
@@ -33,4 +38,3 @@ This project aims to help Zillow better predict its housing market predictions. 
 
 
 
-frameborder="0" allowfullscreen>

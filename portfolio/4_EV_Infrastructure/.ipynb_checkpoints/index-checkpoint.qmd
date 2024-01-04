@@ -1,26 +1,31 @@
 ---
-title: "EVSE Infrastructure Planning: Medical Facilities and Ambulances"
+title: "Kibos Agropole: Agriculture-led Industrializationin Kisumu, Kenya"
 author:
   - Stephanie Cheng
-  - Teresa Chang
-  - Chenxi Zhu
-date: 2022-12-05
+  - Jingyi Cai
+  - Shuting Li
+  - Tao Chen
+date: 2023-12-14
 image: MAIN.png
 categories:
-  - Climate Change
-  - Urban Technology
-  - Smart Cities
-  - EV
   - Transportation
-subtitle: "A prototype interactive playground installation and business proposal forwarding physical activity, equitable access to play, and STEM education for kids 2-12 designed to scale across the city of Philadelphia."
-link:
-- icon: book
-  name: Libro en español
-  url: https://teachtogether.tech/es/index.html
+  - Real Estate
+  - Urban Design
+  - Masterplanning
+subtitle: ""
+about:
+  id: hero-heading
+  image-width: 0em
+  template: solana
+  links:
+    - icon: file-earmark-slides
+      text: Slidedeck
+      href: https://drive.google.com/file/d/1EZoRX6l9PQnkDGIsYRhtfMI7xaVlwjHJ/view?usp=sharing
 ---
 
 ### Project Brief
 
-This project and its code has been posted on the [Sensing the City](https://www.sensingthecity.com/) website created by my instructor and advisor, Professor Allison Lassiter. Find the full post of the DigiPlay project [here](https://www.sensingthecity.com/digiplay-interactive-playground/).
+In this project, my team and I had the opportuni
 
+![](location.png)
 
