@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/portfolio/6_Digital_Equity/index.html",
       "/portfolio/2_ON_TRACK/index.html",
-      "/portfolio/4_EV_Infrastructure/index.html",
+      "/portfolio/4_Kibos_Agropole/index.html",
       "/portfolio/3_Zillow/index.html",
       "/portfolio/1_DigiPlay/index.html",
       "/portfolio/5_Flooding/index.html"
@@ -12,8 +13,20 @@
   {
     "listing": "/portfolio/portfolio.html",
     "items": [
+      "/portfolio/6_Digital_Equity/index.html",
       "/portfolio/2_ON_TRACK/index.html",
-      "/portfolio/4_EV_Infrastructure/index.html",
+      "/portfolio/4_Kibos_Agropole/index.html",
+      "/portfolio/3_Zillow/index.html",
+      "/portfolio/1_DigiPlay/index.html",
+      "/portfolio/5_Flooding/index.html"
+    ]
+  },
+  {
+    "listing": "/1index.html",
+    "items": [
+      "/portfolio/6_Digital_Equity/index.html",
+      "/portfolio/2_ON_TRACK/index.html",
+      "/portfolio/4_Kibos_Agropole/index.html",
       "/portfolio/3_Zillow/index.html",
       "/portfolio/1_DigiPlay/index.html",
       "/portfolio/5_Flooding/index.html"

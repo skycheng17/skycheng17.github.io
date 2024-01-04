@@ -2,16 +2,25 @@
 title: "Stephanie Cheng"
 subtitle: "Urban Planner and Data Analyst"
 image: images/cell_towers.png
+resources: 
+  - "portfolio/1_DigiPlay/index.qmd"
+  - "portfolio/2_ON_TRACK/index.qmd"
+  - "portfolio/3_Zillow/index.qmd"
+  - "portfolio/4_Kibos_Agropole/index.qmd"
+  - "portfolio/5_Flooding/index.qmd"
+  - "portfolio/6_Digital_Equity/index.qmd"
+  - "portfolio/1_DigiPlay/index.qmd"
 listing:
   - id: portfolio
-    contents: portfolio/**/index.qmd
+    contents: "portfolio/**/index.qmd"
     type: grid
-    fields: [image, date, title]
+    fields: [title, categories, date, image]
     sort: "date desc"
-    #categories: cloud
     sort-ui: false
-    filter-ui: false
+    filter-ui: [title, date, categories]
     page-size: 3
+    image-align: left
+    image-height: 1.75in
     
 about:
   template: solana
@@ -36,14 +45,9 @@ toc: false
 
 execute: 
   freeze: false
-  echo: false
+  echo: true
   warning: false
 
-#header-includes: >
-#  <link rel="stylesheet" href="assets/index.css">
-#resources:
-#  - assets/index.css
-#include-in-header: assets/umami.html
 ---
 
 <br><br>
@@ -59,7 +63,6 @@ data for equitable and sustainable use to improve our cities.
 #### [Learn more about me &rarr;](/about)
 
 :::
-<!-- hero-heading -->
 
 <br><br>
 <br><br>
@@ -69,7 +72,6 @@ data for equitable and sustainable use to improve our cities.
 ## Portfolio
 
 ::: {#portfolio}
-
 :::
 
 #### [See more projects &rarr;](/portfolio)

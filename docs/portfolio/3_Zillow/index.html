@@ -67,14 +67,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta name="twitter:title" content="Zillow Home Value Predictions | Stephanie Cheng">
-<meta name="twitter:description" content="A hedonic home price prediction model to help Zillow better predict housing value">
+<meta name="twitter:description" content="A hedonic home price prediction model to help Zillow better predict housing value.">
 <meta name="twitter:image" content="https://skycheng17.github.io/portfolio/3_Zillow/featured.png">
 <meta name="twitter:image-height" content="766">
 <meta name="twitter:image-width" content="1454">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,15 +119,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
   <li><a href="#project-brief" id="toc-project-brief" class="nav-link active" data-scroll-target="#project-brief">Project Brief</a></li>
+  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">Exploratory Analysis</a></li>
+  <li><a href="#project-outcome" id="toc-project-outcome" class="nav-link" data-scroll-target="#project-outcome">Project Outcome</a></li>
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="skycheng17.github.io/blob/main/portfolio/3_Zillow/index.qmd" class="toc-action">View source</a></p></div></div></nav>
-    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    
 <!-- main -->
 <div class="quarto-about-solana column-body">
   <div class="about-entity">
@@ -135,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Zillow Home Value Predictions</h1>
-<p class="subtitle lead">A hedonic home price prediction model to help Zillow better predict housing value</p>
+<p class="subtitle lead">A hedonic home price prediction model to help Zillow better predict housing value.</p>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
     <div class="quarto-category">GIS</div>
@@ -171,11 +176,56 @@ ul.task-list li input[type="checkbox"] {
 <h3 data-anchor-id="project-brief">Project Brief</h3>
 <p>This project aims to help Zillow better predict its housing market predictions through a hedonic model. The project emphasizes on local knowledge, a novel way of looking at the data and creative factors that might enhance predictability of Zillow’s modeling. While Zillow’s model works satisfactorily, this approach offers a different lens into how the model could be built stronger with intel from a variety of internal and external factors, such as amenities like schools, parks, public spaces, as well as demographic data like poverty rates, median income, crime, etc.</p>
 <p>In addition to the hedonic model, this project focussed on cross validation through evaluating mean absolute error/percent error and conducting Moran’s I testing. The full analysis and model can be found below or by clicking the Full Analysis link above.</p>
+</section>
+<section id="exploratory-analysis" class="level2">
+<h2 data-anchor-id="exploratory-analysis">Exploratory Analysis</h2>
+<p>The project conducted a very thorough exploratory analysis with feature engineering on a range of variables. Some external variables are visualized below:</p>
+<div class="grid">
+<div class="g-col-5">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="play.png" class="img-fluid figure-img" style="width:5in"></p>
+<figcaption class="figure-caption">Play streets are visibly more concentrated in center city, with other nodes of concentration across the city.</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-5">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="grocers.png" class="img-fluid figure-img" style="width:5in"></p>
+<figcaption class="figure-caption">Grocery stores are well-spread throughout, with certain pockets of concentration in the typically dense areas (center city, university city) as well as a particular node in North Philadelphia.</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-5">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="crimes.png" class="img-fluid figure-img" style="width:5in"></p>
+<figcaption class="figure-caption">Crime (the crime identified in this set are those self-chosen as crimes that would most affect residential areas, i.e.&nbsp;violent or property crime) has a distinct concentration in South Philadelphia and parts of North Philadelphia.</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-5">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="trees.png" class="img-fluid figure-img" style="width:5in"></p>
+<figcaption class="figure-caption">The greatest density of trees exist across central Philadelphia, across center city and university city, as well as various parts of northwest Philadelphia. Trees are more scarce in other areas.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><img src="featured.png" class="img-fluid"></p>
+</section>
+<section id="project-outcome" class="level2">
+<h2 data-anchor-id="project-outcome">Project Outcome</h2>
 <iframe src="Zillow.html" width="1000" height="1000">
 <p>
 Hi SOF
 </p>
 </iframe>
+</section>
+<section id="data-sources" class="level2">
+<h2 data-anchor-id="data-sources">Data Sources</h2>
 
 
 </section>
@@ -525,6 +575,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/skycheng17\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <script src="https://utteranc.es/client.js" repo="skycheng17/skycheng17.github.io" issue-term="title" theme="body-light" crossorigin="anonymous" async="">
