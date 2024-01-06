@@ -57,9 +57,9 @@ format:
       margin-width: 250px
       gutter-width: 1.5rem
     link-external-newwindow: true
-    theme:
-      light: cosmo
-      dark: [cosmo, theme-dark.scss]
+    theme: cosmo
+      #light: cosmo         #FOR SOME REASON CAUSING ERRORS. FIX LATER
+      #dark: [cosmo, theme-dark.scss]
     highlight-style: solarized
     code-link: true
     code-copy: true
