@@ -19,13 +19,15 @@ about:
   template: solana
   links:
     - icon: file-earmark-slides
-      text: Slidedeck
+      text: Slide deck
       href: https://docs.google.com/presentation/d/1VChSU62-FlUlAEBUNH6FnpEWULC2yhamrGjduXI25ZI/edit?usp=sharing
 ---
 
 ### Project Brief
 
-In this project, my team and I had the opportuni
+Under construction.
+
+See slide deck for full presentation.
 
 ![](full.png)
 

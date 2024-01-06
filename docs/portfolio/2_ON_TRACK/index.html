@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -128,7 +128,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">Exploratory Analysis</a></li>
   <li><a href="#project-outcomes" id="toc-project-outcomes" class="nav-link" data-scroll-target="#project-outcomes">Project Outcomes</a></li>
   <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
-  <li><a href="#recurring-themes-in-recovery" id="toc-recurring-themes-in-recovery" class="nav-link" data-scroll-target="#recurring-themes-in-recovery">Recurring Themes in Recovery</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="skycheng17.github.io/blob/main/portfolio/2_ON_TRACK/index.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -183,21 +182,48 @@ ul.task-list li input[type="checkbox"] {
 </div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
 
+<p><img src="cover.png" class="img-fluid"></p>
 <section id="project-brief" class="level3">
 <h3 data-anchor-id="project-brief">Project Brief</h3>
-<p><strong>Our team’s final report, presentation, and “scrollytelling” mock-up are linked above</strong>. A slide deck created for a lab meeting presentation is also linked, and summarizes the content.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="cover.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Schematic representation of the Medication Assisted Treatment (MAT) referral process pipeline as part of the recovery for someone with Opioid Use Disorder (OUD)</figcaption>
-</figure>
-</div>
+<p>NJ Transit is the primary transit authority in the state of New Jersey and has control over its rail systems and tracks. This project looks into the causes of delays and assumes that most of them might be attributed to climatic conditions. Particularly under very hot and very cold conditions, railways are prone to damages, which we hypothesized will cause more consequential delays that run for a longer period of time, sometimes even causing cancellations. <strong>This project explores how addressing and predicting for these delays can help select those tracks that need more maintenance and checks.</strong></p>
+<p>We created a government-facing website for NJ transit authority to predict where most train delays will happen to schedule checking, remodeling and upgradation of train tracks in those segments. We hope our forecast models will allow NJ Transit to optimize repair funding more efficiently and prevent delays.</p>
+<p>This analysis uses a simple Machine Learning model based on a linear regression, while employing a space-time panel with variables such as station, time, time lag, etc. We see great uses of a similar model in other cities like New York and Philadelphia to help predict for SEPTA and MTA delays to scale.</p>
 </section>
 <section id="exploratory-analysis" class="level3">
 <h3 data-anchor-id="exploratory-analysis">Exploratory Analysis</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="delay.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">We began our analysis by looking at where and by how long train delays occur.</figcaption>
+</figure>
+</div>
+<p>In our exploratory analysis, we conducted various GIS analyses and correlation tests to determine how best to build our prediction model. Our approach focuses on climatic conditions and how they affect delay time. Variables used include wind, temperature, visibility, precipitation, etc.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="climate.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">As climate change continues to worsen, railway tracks are more often in need of repair.</figcaption>
+</figure>
+</div>
+<p>We created three regression models with different variables, and found our third regression most accurate:</p>
+<div class="grid">
+<div class="g-col-5">
+<p><br><br><br> <br><br><br><br></p>
+<pre><code>Regression 3 &lt;- lm (delay_minutes ~
+station + hour + day of the week
++ Temperature + Precipitation +
+Visibility + Wind_Speed + lagHour
++ lag2Hours +lag3Hours +lag12Hours
++ lag1day + holidayLag + holiday</code></pre>
+</div>
+<div class="g-col-7">
+<p><img src="error.png" class="img-fluid" style="width:7in"></p>
+</div>
+</div>
+<p>In conclusion, we believe our project is a proactive approach to track maintenance through the lens of delay consequences. It is cost reducing, and can increase resilience and customer satisfaction.</p>
 </section>
 <section id="project-outcomes" class="level3">
 <h3 data-anchor-id="project-outcomes">Project Outcomes</h3>
+<p>The project outcome and use case for this analysis was a prototype website to serve NJ Transit in making decisions on rail upgrades. See more in the presentation video, wireframing website prototype, and full analysis.</p>
 <section id="pechakucha-presentation" class="level4">
 <h4 data-anchor-id="pechakucha-presentation">Pechakucha Presentation</h4>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0V8Ebk3E6sA?si=intxhMFAYXFc2gh7" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -208,29 +234,22 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 <p><em>It is recommended to click into the link or view fullscreen for a better experience of the prototype website.</em></p>
 </section>
+<section id="full-analysis" class="level4">
+<h4 data-anchor-id="full-analysis">Full Analysis</h4>
+<p><em>Click the full analysis button at the top to view at full screen.</em></p>
+<iframe src="ON_TRACK.html" width="800" height="800">
+<p>
+Hi SOF
+</p>
+</iframe>
+</section>
 </section>
 <section id="data-sources" class="level3">
 <h3 data-anchor-id="data-sources">Data Sources</h3>
 <ul>
-<li><a href="https://codeforphilly.org/">Code for Philly</a></li>
-<li><a href="https://www.meetup.com/DataPhilly/">DataPhilly</a></li>
-<li><a href="https://www.rladiesphilly.org/">R-Ladies Philly</a></li>
-<li><a href="https://www.rladiesphilly.org/">Philly Data Jawn</a></li>
-<li><a href="https://www.phila.gov/programs/combating-the-opioid-epidemic/">City of Philadelphia</a></li>
-</ul>
-</section>
-<section id="recurring-themes-in-recovery" class="level1">
-<h1>Recurring Themes in Recovery</h1>
-<p>We observed a number of recurring themes in the qualitative data collected.</p>
-<ul>
-<li><strong>Every recovery path is unique.</strong> Often, a person’s recovery is non-linear, includes setbacks and does not have a clear end point. This can make visualizing a journey difficult, because there is no “typical” recovery.</li>
-<li><strong>The perfect recovery process is the one perfect for that person.</strong> The best recovery process is one that meets an individual exactly where they are, free of external barriers and judgment, and full of respect and compassion.</li>
-<li><strong>Relapse can happen during recovery.</strong> An individual can relapse but this does not mean that their recovery is over.</li>
-<li><strong>Mindset for recovery.</strong> Recovery can only begin when a person is ready. Until that point, their access to harm reduction education and harm reduction services is extremely important.</li>
-<li><strong>Role of long-term relationships between individuals with OUD and agencies that provide recovery services.</strong> Thanks to these long term relationships, a person knows where to turn when they are ready for help.</li>
-<li><strong>Stigma and recovery.</strong> If an individual was treated poorly in the past by an emergency response person or at a healthy clinic, they may refuse treatment in the future. Some abstinence-based treatment programs do not condone substance use of any kind, including MAT. Stigma exists within advocacy in the form of promoting Vivitrol, which has disadvantages when compared to buprenorphine, but cannot be diverted.</li>
-<li><strong>Benefit of “Lived Experience”.</strong> When case managers can share that they have “lived experience” and are in recovery themselves, it often makes individuals more comfortable. These case managers are able to offer compassion because they have been through withdrawal and some of the same challenges themselves.</li>
-<li><strong>Vulnerable Populations.</strong> While there may not be a typical recovery story, it is certain that there are populations for whom there exist even more obstacles to recovery. These vulnerable populations include: homeless, uninsured, mothers, formerly incarcerated, and people with a dual diagnosis of OUD and mental illness.</li>
+<li><a href="kaggle.com/datasets/pranavbadami/nj-transit-amtrak-nec-performance">Kaggle</a></li>
+<li><a href="https://njogis-newjersey.opendata.arcgis.com/explore?collection=dataset&amp;groupIds=60a4f9a1342f4f7a94ac986e8dd14892">NJGIN Open Data</a></li>
+<li><a href="https://mesonet.agron.iastate.edu/request/download.phtml">Iowa Environment Mesonet</a></li>
 </ul>
 
 

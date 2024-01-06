@@ -1,6 +1,6 @@
 ---
 title: "Stephanie Cheng"
-subtitle: "Urban Planner, Data Analyst"
+subtitle: "Urban Planner and Data Analyst"
 ---
 
 ## Education
@@ -9,7 +9,7 @@ subtitle: "Urban Planner, Data Analyst"
 ###### Master of City Planning; Concentration in Urban Technology and Data Analytics (2022-2024)
 * Relevant coursework: data visualization, geospatial analysis, policy research and development, real-time urban data sensing, urban design
 * Climate Leaders at Penn Fellow (2023-2024)
-* GPA: 3.86
+* GPA: 3.89
 
 #### <b>University of Warwick</b>  *Coventry, UK*
 ###### Bachelor of Laws (LLB) (2019-2022)

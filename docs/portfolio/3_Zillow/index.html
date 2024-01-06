@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="floating nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,8 +119,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
   <li><a href="#project-brief" id="toc-project-brief" class="nav-link active" data-scroll-target="#project-brief">Project Brief</a></li>
@@ -129,10 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="skycheng17.github.io/blob/main/portfolio/3_Zillow/index.qmd" class="toc-action">View source</a></p></div></div></nav>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
-<!-- margin-sidebar -->
-    
+    </div>
 <!-- main -->
 <div class="quarto-about-solana column-body">
   <div class="about-entity">
@@ -214,11 +212,17 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><img src="featured.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="featured.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Our final model resulted in a prediction home value with this level of similarity.</figcaption>
+</figure>
+</div>
 </section>
 <section id="project-outcome" class="level2">
 <h2 data-anchor-id="project-outcome">Project Outcome</h2>
-<iframe src="Zillow.html" width="1000" height="1000">
+<p><em>Click the full analysis button at the top to view at full screen.</em></p>
+<iframe src="Zillow.html" width="800" height="800">
 <p>
 Hi SOF
 </p>
@@ -226,6 +230,11 @@ Hi SOF
 </section>
 <section id="data-sources" class="level2">
 <h2 data-anchor-id="data-sources">Data Sources</h2>
+<ul>
+<li><a href="https://www.zillow.com/">Zillow</a>, wrangled by Michael Fichman <a href="https://github.com/mafichman/musa_5080_2023/blob/main/Midterm/data/2023/studentData.geojson">here</a></li>
+<li><a href="https://opendataphilly.org">OpenDataPhilly</a></li>
+<li><a href="https://census.gov">Census Bureau</a></li>
+</ul>
 
 
 </section>

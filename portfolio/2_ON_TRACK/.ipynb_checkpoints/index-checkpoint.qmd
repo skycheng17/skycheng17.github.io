@@ -31,21 +31,62 @@ about:
     - icon: file-earmark-slides
       text: Slidedeck
       href: https://docs.google.com/presentation/d/12TAbDNmJrRJ4asHtRfg1bzuZPKZeka38F76zeve-3Z8/edit?usp=sharing
+format:
+  html: 
+    grid:
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 250px
+      gutter-width: 1.5rem
 
 ---
 
+![](cover.png)
 
 ### Project Brief
 
+NJ Transit is the primary transit authority in the state of New Jersey and has control over its rail systems and tracks. This project looks into the causes of delays and assumes that most of them might be attributed to climatic conditions. Particularly under very hot and very cold conditions, railways are prone to damages, which we hypothesized will cause more consequential delays that run for a longer period of time, sometimes even causing cancellations. **This project explores how addressing and predicting for these delays can help select those tracks that need more maintenance and checks.**
 
-**Our team's final report, presentation, and "scrollytelling" mock-up are linked above**. A slide deck created for a lab meeting presentation is also linked, and summarizes the content.
+We created a government-facing website for NJ transit authority to predict where most train delays will happen to schedule checking, remodeling and upgradation of train tracks in those segments. We hope our forecast models will allow NJ Transit to optimize repair funding more efficiently and prevent delays. 
 
-![Schematic representation of the Medication Assisted Treatment (MAT) referral process pipeline as part of the recovery for someone with Opioid Use Disorder (OUD)](cover.png)
+This analysis uses a simple Machine Learning model based on a linear regression, while employing a space-time panel with variables such as station, time, time lag, etc. We see great uses of a similar model in other cities like New York and Philadelphia to help predict for SEPTA and MTA delays to scale. 
 
 ### Exploratory Analysis
 
+![We began our analysis by looking at where and by how long train delays occur.](delay.png)
+
+In our exploratory analysis, we conducted various GIS analyses and correlation tests to determine how best to build our prediction model. Our approach focuses on climatic conditions and how they affect delay time. Variables used include wind, temperature, visibility, precipitation, etc.
+
+![As climate change continues to worsen, railway tracks are more often in need of repair.](climate.png)
+
+We created three regression models with different variables, and found our third regression most accurate:
+
+::: {.grid}
+
+::: {.g-col-5}
+<br><br><br>
+<br><br><br><br>
+```
+Regression 3 <- lm (delay_minutes ~
+station + hour + day of the week
++ Temperature + Precipitation +
+Visibility + Wind_Speed + lagHour
++ lag2Hours +lag3Hours +lag12Hours
++ lag1day + holidayLag + holiday
+```
+:::
+
+::: {.g-col-7}
+![](error.png){width=7in}
+:::
+
+:::
+
+In conclusion, we believe our project is a proactive approach to track maintenance through the lens of delay consequences. It is cost reducing, and can increase resilience and customer satisfaction.
 
 ### Project Outcomes
+
+The project outcome and use case for this analysis was a prototype website to serve NJ Transit in making decisions on rail upgrades. See more in the presentation video, wireframing website prototype, and full analysis.
 
 #### Pechakucha Presentation
 {{< video https://www.youtube.com/embed/0V8Ebk3E6sA?si=intxhMFAYXFc2gh7 >}}
@@ -55,23 +96,15 @@ about:
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBk7ORgaR4XeQm830dYbeWz%2FPPA%3Fnode-id%3D13-457%26source%3Demail_invite%26mode%3Ddesign%26t%3D3sLUGUBwsQADijTa-1" allowfullscreen></iframe>
 *It is recommended to click into the link or view fullscreen for a better experience of the prototype website.*
 
+#### Full Analysis
+
+*Click the full analysis button at the top to view at full screen.*
+
+<iframe src="ON_TRACK.html" width="800" height="800">
+  <p>Hi SOF</p>
+</iframe>
 
 ### Data Sources
-- [Code for Philly ](https://codeforphilly.org/)
-- [DataPhilly](https://www.meetup.com/DataPhilly/)
-- [R-Ladies Philly](https://www.rladiesphilly.org/)
-- [Philly Data Jawn](https://www.rladiesphilly.org/)
-- [City of Philadelphia](https://www.phila.gov/programs/combating-the-opioid-epidemic/)
-
-# Recurring Themes in Recovery
-We observed a number of recurring themes in the qualitative data collected.
-
-- **Every recovery path is unique.** Often, a person’s recovery is non-linear, includes setbacks and does not have a clear end point. This can make visualizing a journey difficult, because there is no “typical” recovery.
-- **The perfect recovery process is the one perfect for that person.** The best recovery process is one that meets an individual exactly where they are, free of external barriers and judgment, and full of respect and compassion.
-- **Relapse can happen during recovery.** An individual can relapse but this does not mean that their recovery is over.
-- **Mindset for recovery.** Recovery can only begin when a person is ready. Until that point, their access to harm reduction education and harm reduction services is extremely important.
-- **Role of long-term relationships between individuals with OUD and agencies that provide recovery services.** Thanks to these long term relationships, a person knows where to turn when they are ready for help.
-- **Stigma and recovery.** If an individual was treated poorly in the past by an emergency response person or at a healthy clinic, they may refuse treatment in the future. Some abstinence-based treatment programs do not condone substance use of any kind, including MAT. Stigma exists
-within advocacy in the form of promoting Vivitrol, which has disadvantages when compared to buprenorphine, but cannot be diverted.
-- **Benefit of “Lived Experience”.** When case managers can share that they have “lived experience” and are in recovery themselves, it often makes individuals more comfortable. These case managers are able to offer compassion because they have been through withdrawal and some of the same challenges themselves.
-- **Vulnerable Populations.** While there may not be a typical recovery story, it is certain that there are populations for whom there exist even more obstacles to recovery. These vulnerable populations include: homeless, uninsured, mothers, formerly incarcerated, and people with a dual diagnosis of OUD and mental illness.
+* [Kaggle](kaggle.com/datasets/pranavbadami/nj-transit-amtrak-nec-performance)
+* [NJGIN Open Data](https://njogis-newjersey.opendata.arcgis.com/explore?collection=dataset&groupIds=60a4f9a1342f4f7a94ac986e8dd14892)
+* [Iowa Environment Mesonet](https://mesonet.agron.iastate.edu/request/download.phtml)
