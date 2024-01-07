@@ -32,7 +32,7 @@ about:
       href: mailto:skycheng@design.upenn.edu
     - icon: file-pdf
       text: Resume
-      href: https://skycheng17.github.io/resume/index.html  
+      href: https://skycheng17.github.io/resume
     - icon: github
       text: GitHub
       href: https://github.com/skycheng17
